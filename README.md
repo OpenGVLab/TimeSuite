@@ -44,29 +44,12 @@ TODO
 ## Evaluation Results
 
 
-We modify lmms-eval to eval ..
+TODO
 
-## Short-to Long Training
-
-
-### [Instruction Data](./DATA.md)
-
-We build a diver instruction data with **2M** samples from 34 distince sources. Check [DATA](./DATA.md) for more details.
-
-### Model
-
-| Stage | Num. frames | ViT | Connector | LLM | Shell |
-|--------|:-------:|:------:|:------:|:------:|:------:|
-| Stage-1 | 4 | :snowflake: | :fire: | :snowflake: | TBD |
-| Stage-2 | 4-8 | :fire: | :fire: | :fire: | TBD |
-| Stage-3 | 64-512 | :fire: | :fire: | :fire: | TBD |
-| Stage-4 | 64-512 | :fire: | :fire: | :snowflake: | TBD |
+## Grounded Training
 
 
-
-
-## :bar_chart: [Multi-Hop NIAH](./BENCHMARK.md)
-
+TODO
 
 
 
@@ -76,7 +59,12 @@ We build a diver instruction data with **2M** samples from 34 distince sources. 
 
 If you find this project useful in your research, please consider cite:
 ```BibTeX
-
+@article{zeng2024timesuite,
+  title={Timesuite: Improving mllms for long video understanding via grounded tuning},
+  author={Zeng, Xiangyu and Li, Kunchang and Wang, Chenting and Li, Xinhao and Jiang, Tianxiang and Yan, Ziang and Li, Songze and Shi, Yansong and Yue, Zhengrong and Wang, Yi and others},
+  journal={arXiv preprint arXiv:2410.19702},
+  year={2024}
+}
 ```
 
 # :dizzy: Acknowledgement
