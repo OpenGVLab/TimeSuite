@@ -13,12 +13,12 @@
 This paper proposes TimeSuite, a collection of new designs to adapt the existing short-form video MLLMs for long video understanding, including a simple yet efficient framework to process long video sequence, a high-quality video dataset for grounded tuning of MLLMs, and a carefully-designed instruction tuning task to explicitly incorporate the grounding supervision in the traditional QA format.
 
 **State-of-the-art performance**: VideoChat-T demonstrates high performance for both long-form video question answering and temporal grounding.
-![alt text](img/sota.png)
+![alt text](images/abstract.png)
 
 
 **Highly efficient model architecture** with exceptional inference speed, encoding each video frame into just **3 tokens**, leading to the flops of our VideoChat-T are 5.1% of Llava-OneVision
 
-![alt text](img/model_framework.png)
+![alt text](images/structure.png)
 
 
 
