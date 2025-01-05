@@ -10,11 +10,13 @@
 
 ## :parrot: Introduction
 
-**State-of-the-art performance** in short and long video understanding, with temporal localization capabilities comparable to expert models.
+This paper proposes TimeSuite, a collection of new designs to adapt the existing short-form video MLLMs for long video understanding, including a simple yet efficient framework to process long video sequence, a high-quality video dataset for grounded tuning of MLLMs, and a carefully-designed instruction tuning task to explicitly incorporate the grounding supervision in the traditional QA format.
+
+**State-of-the-art performance**: VideoChat-T demonstrates high performance for both long-form video question answering and temporal grounding.
 ![alt text](img/sota.png)
-**Supports ultra-long video inputs**, achieving a groundbreaking needle-in-a-haystack evaluation accuracy of **99.1% on 10,000 frames**, capable of processing videos up to three hours long.
-![alt text](img/niah.png)
-**Highly efficient model architecture** with exceptional inference speed, encoding each video frame into just **16 tokens**, making it **5–10** times faster than the previous model.
+
+
+**Highly efficient model architecture** with exceptional inference speed, encoding each video frame into just **3 tokens**, leading to the flops of our VideoChat-T are 5.1% of Llava-OneVision
 
 ![alt text](img/model_framework.png)
 
@@ -22,9 +24,8 @@
 
 
 ## :fire: Updates
-- **2024/12/29**: Release **VideoChat2-Flash** and **MH-NIAH**:
-    - VideoChat-Flash is a powerfull baseline built on [UMT](https://github.com/OpenGVLab/unmasked_teacher) and Qwen2-7B.
-    - [MH-NIAH](./BENCHMARK.md) is a comprehensive benchmark for video understanding.
+
+TODO
 
 
 
@@ -32,7 +33,7 @@
 
 ## Inference & Demo
 
-
+TODO
 
 
 
