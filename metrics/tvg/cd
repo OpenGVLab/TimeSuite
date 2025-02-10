@@ -1,0 +1,5 @@
+GT File: /path_to_the_timesuite_root_folder/dataset/TimeIT/temporal_video_grounding/charades/charades_annotation/test.caption_coco_format.json
+# pred video timestamps 3720; # gt video timestamps 3720
+IOU 0.3: 56.29032258064516
+IOU 0.5: 34.56989247311828
+IOU 0.7: 15.887096774193548

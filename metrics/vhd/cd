@@ -1,0 +1,8 @@
+Calculating highlight scores with min score 2 (Fair)
+Time cost 0.35 seconds
+Calculating highlight scores with min score 3 (Good)
+Time cost 0.32 seconds
+Calculating highlight scores with min score 4 (VeryGood)
+Time cost 0.26 seconds
+HL-min-VeryGood-mAP:  16.0
+HL-min-VeryGood-Hit1:  36.09
