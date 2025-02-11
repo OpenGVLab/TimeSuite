@@ -2,7 +2,7 @@
 
 <h2><a href="https://arxiv.org/abs/2410.19702">[ICLR 2025] TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning</a></h2>
 
-[Xiangyu Zeng](https://scholar.google.com/citations?user=jS13DXkAAAAJ&hl=zh-CN), [Kunchang Li](https://scholar.google.com/citations?user=D4tLSbsAAAAJ), Chenting Wang, [Xinhao Li](https://scholar.google.com/citations?user=evR3uR0AAAAJ&hl=zh-CN), Tianxiang Jiang, Ziang Yan, Songze Li, Yansong Shi, Zhengrong Yue, [Yi Wang](https://scholar.google.com.hk/citations?hl=zh-CN&user=Xm2M8UwAAAAJ), [Yali Wang](https://scholar.google.com/citations?user=hD948dkAAAAJ), [Yu Qiao](https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl), and [Limin Wang](https://scholar.google.com/citations?user=HEuN8PcAAAAJ)
+[Xiangyu Zeng](https://scholar.google.com/citations?user=jS13DXkAAAAJ&hl=zh-CN), [Kunchang Li](https://scholar.google.com/citations?user=D4tLSbsAAAAJ), [Chenting Wang](https://scholar.google.com/citations?user=f81ulHQAAAAJ&hl=zh-CN), [Xinhao Li](https://scholar.google.com/citations?user=evR3uR0AAAAJ&hl=zh-CN), Tianxiang Jiang, [Ziang Yan](https://scholar.google.com/citations?user=78lx13MAAAAJ&hl=zh-CN), [Songze Li](https://scholar.google.com/citations?user=8rBMUD4AAAAJ&hl=zh-CN), Yansong Shi, Zhengrong Yue, [Yi Wang](https://scholar.google.com.hk/citations?hl=zh-CN&user=Xm2M8UwAAAAJ), [Yali Wang](https://scholar.google.com/citations?user=hD948dkAAAAJ), [Yu Qiao](https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl), and [Limin Wang](https://scholar.google.com/citations?user=HEuN8PcAAAAJ)
 
 </div>
 
@@ -32,19 +32,29 @@ This paper proposes TimeSuite, a collection of new designs to adapt the existing
 TODO
 
 
+## Preparation
 
+- Create a new environment and run the command to install the necessary dependencies.
 
+```
+conda create --name TimeSuite
+conda activate TimeSuite
+pip install -r requirements.txt
+```
+
+- Download the model and code of TimeSuite from [https://huggingface.co/Lanxingxuan/TimeSuite](https://huggingface.co/Lanxingxuan/TimeSuite) to the `./download` folder. (Please note that you need to additionally download Mistral-7B-Instruct-v0.2 to ./download/parameters.)
+
+- Search for all instances of `/path_to_the_timesuite_root_folder` and replace them with the directory of the TimeSuite root folder.
+
+- Please search for all video dataset paths containing `s3://` and replace them with the corresponding video dataset paths on your server.
 
 ## Inference & Demo
 
-TODO
+- Run `demo/demo.ipynb` to see the demo provided in the paper, or try out the videos and problems of your choice.
+
+- Run `eval/eval_qa_tasks.ipynb` to test the general QA performance of the model.
 
 
-
-## Evaluation Results
-
-
-TODO
 
 ## Grounded Training
 
