@@ -6,31 +6,26 @@
 
 </div>
 
-
-
 ## :parrot: Introduction
 
 This paper proposes TimeSuite, a collection of new designs to adapt the existing short-form video MLLMs for long video understanding, including a simple yet efficient framework to process long video sequence, a high-quality video dataset for grounded tuning of MLLMs, and a carefully-designed instruction tuning task to explicitly incorporate the grounding supervision in the traditional QA format.
 
-
 **State-of-the-art performance**: VideoChat-T demonstrates high performance for both long-form video question answering and temporal grounding.
 ![alt text](images/abstract.png)
 
-
 **Highly efficient model architecture** with exceptional inference speed, encoding each video frame into just **3 tokens**, leading to the flops of our VideoChat-T are 5.1% of Llava-OneVision
 ![alt text](images/structure.png)
-
 
 **High-quality data**
 - We introduced the comprehensive dataset TimePro, which includes 9 task types with video sources from 15 different datasets.
 - We designed a novel Temporal Grounded Caption fine-tuning task to effectively mitigate hallucinations in MLLM.
 ![alt text](images/data.png)
 
-
 ## :fire: Updates
 
-TODO
-
+- 2025.02.12 TimeSuite is now initially open-sourced. We welcome everyone to try it out!
+- 2025.01.23 TimeSuite has been accepted by ICLR 2025.
+- 2024.10.25 The paper of TimeSuite has been uploaded to arXiv.
 
 ## Preparation
 
@@ -42,7 +37,7 @@ conda activate TimeSuite
 pip install -r requirements.txt
 ```
 
-- Download the model and code of TimeSuite from [https://huggingface.co/Lanxingxuan/TimeSuite](https://huggingface.co/Lanxingxuan/TimeSuite) to the `./download` folder. (Please note that you need to additionally download [Mistral-7B-Instruct-v0.2]() to `./download/parameters`)
+- Download the model and code of TimeSuite from [https://huggingface.co/Lanxingxuan/TimeSuite](https://huggingface.co/Lanxingxuan/TimeSuite) to the `./download` folder. (Please note that you need to additionally download [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) to `./download/parameters`)
 
 - Search for all instances of `/path_to_the_timesuite_root_folder` and replace them with the directory of the TimeSuite root folder.
 
@@ -50,11 +45,16 @@ pip install -r requirements.txt
 
 ## Inference & Demo
 
-- Run `demo/demo.ipynb` to see the demo provided in the paper, or try out the videos and problems of your choice.
+- Run `demo/demo.ipynb` to see the demo provided in the paper, or try out the videos and questions of your choice.
 
 - Run `eval/eval_qa_tasks.ipynb` to test the general QA performance of the model.
 
+- To test the temporal grounding capability of TimeSuite, please follow these two steps.
 
+```
+bash eval/test_grounding.sh
+bash eval/get_grounding_result.sh
+```
 
 ## Grounded Training
 
