@@ -27,16 +27,16 @@ echo "Model Dir : ${OUTPUT_DIR}"
 mkdir ${OUTPUT_DIR}
 
 
-    # -w SH-IDCA1404-10-140-54-[5,12,14,23] \
 
 
-srun -p ${PARTITION} \
-    --job-name=${JOB_NAME} \
-    -n${NNODE} \
-    --gres=gpu:${NUM_GPUS} \
-    --ntasks-per-node=1 \
-    --cpus-per-task=${NUM_CPUS} \
-    bash torchrun.sh \
+# srun -p ${PARTITION} \
+#     --job-name=${JOB_NAME} \
+#     -n${NNODE} \
+#     --gres=gpu:${NUM_GPUS} \
+#     --ntasks-per-node=1 \
+#     --cpus-per-task=${NUM_CPUS} \
+
+bash torchrun.sh \
     --nnodes=${NNODE} \
     --nproc_per_node=${NUM_GPUS} \
     --rdzv_backend=c10d \

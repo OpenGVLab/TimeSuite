@@ -4,7 +4,7 @@ from configs.instruction_data import *
 
 train_corpus = "TimePro_Normal"
 
-train_file = "${available_corpus[${train_corpus}]}"  # for lazy evaluation
+train_file = "${available_corpus[${train_corpus}]}"  
 test_file = dict()
 test_types = []
 num_workers = 6
@@ -18,7 +18,7 @@ clip_frames = 8
 good_init = True
 
 batch_size = 2
-max_txt_l = 1024
+max_txt_l = 1536
 
 save_iter=1000
 

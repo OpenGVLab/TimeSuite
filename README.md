@@ -58,12 +58,15 @@ bash eval/get_grounding_result.sh
 
 ## Grounded Tuning
 
+- Please properly configure the video dataset path in `configs/instruction_data.py`.
+- Modify `scripts/videochat_mistral/config_LinearP.py` and `scripts/videochat_mistral/config_LinearProAda.py` to adjust the model training parameter settings.
+- Please run `bash scripts/videochat_mistral/run_7b_stage4.sh` to initiate the fine-tuning of the model.
+- To reproduce the fine-tuning results presented in the paper, you need to initiate the model training in a two-stage manner. For detailed parameter settings, please refer to Appendix D of the paper.
 
-TODO
 
+## TimePro Dataset
 
-
-
+- All data used for fine-tuning is now open-sourced. Please visit [here](https://huggingface.co/Lanxingxuan/TimeSuite/tree/main/datasets/TimePro) to download.
 
 # :page_facing_up: Citation
 

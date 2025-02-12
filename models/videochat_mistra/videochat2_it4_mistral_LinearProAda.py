@@ -1,6 +1,5 @@
 import random
 import logging
-
 import torch
 from torch.cuda.amp import autocast as autocast
 import torch.nn as nn
@@ -20,11 +19,8 @@ class TransposeLayerNorm(nn.Module):
         self.layer_norm = nn.LayerNorm(token_dim)
 
     def forward(self, x):
-        # 转置操作
         x = x.permute(0, 2, 1)  # [batch size, token number, token dim]
-        # 应用 LayerNorm
         x = self.layer_norm(x)
-        # 恢复原始形状
         x = x.permute(0, 2, 1)  # [batch size, token dim, token number]
         return x
 
@@ -280,21 +276,19 @@ class VideoChat2_it4_mistral_LinearProAda(Blip2Base):
                 msg = self.load_state_dict(ckpt, strict=False)
             logger.info(msg)
         
-        if config.get("good_init", True) is True:    #Stage4线性层初始化
+        if config.get("good_init", True) is True:    
             # logger.info(f"Enable good initialization!")
             print("Enable good initialization!")
-            # 768-->768初始化为对角阵，不改变输入
             nn.init.eye_(self.clip_proj.weight)
             nn.init.zeros_(self.clip_proj.bias)
-            # Stage3的线性层用来初始化Stage4
-            mistral_weight = self.mistral_proj.weight.data  # 将权重和偏置复制 self.token_merge_len 遍
+            mistral_weight = self.mistral_proj.weight.data  
             mistral_weight = mistral_weight.repeat(1, self.token_merge_len)
-            self.merge_proj.weight.data = mistral_weight / self.token_merge_len    # 用复制后的权重和偏置初始化 merge_proj
+            self.merge_proj.weight.data = mistral_weight / self.token_merge_len    
             self.merge_proj.bias.data = self.mistral_proj.bias.data
         else:
             print("Disable good initialization!")
         
-        for _, param in self.mistral_proj.named_parameters():   # 关闭stage3的liner层训练
+        for _, param in self.mistral_proj.named_parameters():   
             param.requires_grad = False
         
         

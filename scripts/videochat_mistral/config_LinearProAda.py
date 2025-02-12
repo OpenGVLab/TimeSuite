@@ -3,7 +3,7 @@ from configs.instruction_data import *
 # ========================= data ==========================
 train_corpus = "TimePro_Normal"
 
-train_file = "${available_corpus[${train_corpus}]}"  # for lazy evaluation
+train_file = "${available_corpus[${train_corpus}]}"  
 test_file = dict()
 test_types = []
 num_workers = 6
