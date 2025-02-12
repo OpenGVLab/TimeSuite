@@ -56,7 +56,7 @@ bash eval/test_grounding.sh
 bash eval/get_grounding_result.sh
 ```
 
-## Grounded Training
+## Grounded Tuning
 
 
 TODO
@@ -69,16 +69,22 @@ TODO
 
 If you find this project useful in your research, please consider cite:
 ```BibTeX
-@article{zeng2024timesuite,
-  title={Timesuite: Improving mllms for long video understanding via grounded tuning},
-  author={Zeng, Xiangyu and Li, Kunchang and Wang, Chenting and Li, Xinhao and Jiang, Tianxiang and Yan, Ziang and Li, Songze and Shi, Yansong and Yue, Zhengrong and Wang, Yi and others},
-  journal={arXiv preprint arXiv:2410.19702},
-  year={2024}
+@misc{zeng2024timesuite,
+      title={TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning}, 
+      author={Xiangyu Zeng and Kunchang Li and Chenting Wang and Xinhao Li and Tianxiang Jiang and Ziang Yan and Songze Li and Yansong Shi and Zhengrong Yue and Yi Wang and Yali Wang and Yu Qiao and Limin Wang},
+      year={2024},
+      eprint={2410.19702},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.19702}, 
 }
 ```
 
 # :dizzy: Acknowledgement
 
-<!-- Thanks to the open source of the following projects:
+Thanks to the open source of the following projects:
 
-[InternVideo](https://github.com/OpenGVLab/InternVideo), [UMT](https://github.com/OpenGVLab/unmasked_teacher), [Qwen](https://github.com/Vision-CAIR/MiniGPT-4), [LLaVA-VL](https://github.com/Vision-CAIR/MiniGPT-4) -->
+- [UMT](https://github.com/OpenGVLab/unmasked_teacher)
+- [MVBench](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2)
+- [TimeChat](https://github.com/RenShuhuai-Andy/TimeChat)
+- [LITA](https://github.com/NVlabs/LITA)
