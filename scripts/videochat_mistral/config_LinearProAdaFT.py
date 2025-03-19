@@ -1,9 +1,11 @@
 from configs.instruction_data import *
 
 # ========================= data ==========================
-train_corpus = "TimePro_Normal"
 
-train_file = "${available_corpus[${train_corpus}]}"  
+train_corpus = "FT_Temporal_Grounding_Both"
+
+
+train_file = "${available_corpus[${train_corpus}]}"  # for lazy evaluation
 test_file = dict()
 test_types = []
 num_workers = 6
@@ -40,10 +42,10 @@ inputs = dict(
 # ========================= model ==========================
 model = dict(
     model_cls="VideoChat2_it4_mistral_LinearProAda",
-    vit_blip_model_path="/path_to_the_timesuite_root_folder/download/parameters/umt_l16_qformer.pth",
-    mistral_model_path="/path_to_the_timesuite_root_folder/download/parameters/Mistral-7B-Instruct-v0.2",
-    videochat2_model_path="/path_to_the_timesuite_root_folder/download/parameters/videochat2_mistral_7b_stage3.pth",
-    pretrained_path="your_LinearP_ckpt_path/ckpt_00.pth",
+    vit_blip_model_path="/mnt/petrelfs/share_data/likunchang/model/videochat2/umt_l16_qformer.pth",
+    mistral_model_path="/mnt/petrelfs/share_data/likunchang/model/llm//Mistral-7B-Instruct-v0.2",
+    videochat2_model_path="/mnt/petrelfs/share_data/likunchang/model/videochat2/videochat2_mistral_7b_stage3.pth",
+    pretrained_path="your_LinearProAda_ckpt_path/ckpt_01.pth",
     freeze_vit=True,
     freeze_qformer=False,
     max_txt_len="${max_txt_l}", # use large max_txt_len on stage3
@@ -96,7 +98,7 @@ model = dict(
 
 optimizer = dict(
     opt="adamW",
-    lr=1.5e-5,
+    lr=1e-5,
     opt_betas=[0.9, 0.999],  # default
     weight_decay=0.02,
     max_grad_norm=-1,  # requires a positive float, use -1 to disable
@@ -104,7 +106,7 @@ optimizer = dict(
     different_lr=dict(enable=False, module_names=[], lr=1e-3),
 )
 
-scheduler = dict(sched="cosine", epochs=2, min_lr_multi=0.2, warmup_epochs=0.05)
+scheduler = dict(sched="cosine", epochs=5, min_lr_multi=0.1, warmup_epochs=0.1)
 
 evaluate = False
 deep_fusion = False

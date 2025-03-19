@@ -11,11 +11,20 @@ PARTITION='video5'
 TRAIN_TYPE=""
 
 
+# <<< Grounded Tuning Epoch 1 >>>
 MODEL_TYPE='LinearP'
 JOB_NAME="F192_CF8${TRAIN_TYPE}_${MODEL_TYPE}_TimePro_Normal"
 
+
+# <<< Grounded Tuning Epoch 2 & 3 >>>
 # MODEL_TYPE='LinearProAda'
 # JOB_NAME="F128_CF8${TRAIN_TYPE}_${MODEL_TYPE}_TimePro_Normal"
+
+
+# <<< Supervised FT on Charades-STA & QVHighlight >>>
+# MODEL_TYPE='LinearProAdaFT'
+# JOB_NAME="F128_CF8${TRAIN_TYPE}_${MODEL_TYPE}_FT_Both"
+
 
 NNODE=2
 NUM_GPUS=8

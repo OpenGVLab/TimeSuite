@@ -124,6 +124,19 @@ available_corpus = dict(
         'video'
     ],
     
+    
+    FT_Charades=[
+        f"{anno_root_it}/FT_Charades.json", 
+        "s3://zengxiangyu/Charades/",
+        "video"
+    ],
+    
+    FT_QVHighlights=[
+        f"{anno_root_it}/FT_QVHighlights.json", 
+        "s3://QVHighlight/videos/",
+        "video"
+    ],
+    
 )
 
 
@@ -152,4 +165,13 @@ available_corpus["TimePro_Normal"] = [    #final dataset
     available_corpus["vqa_moviechat"],
     available_corpus["caption_moviechat"],
     available_corpus["reasoning_star"],
+]
+
+
+
+available_corpus["FT_Temporal_Grounding_Both"] = [
+    available_corpus["FT_Charades"],    
+    available_corpus["FT_QVHighlights"],
+    available_corpus["grounding_ANetHL2"],
+    available_corpus["caption_youcook2"],
 ]

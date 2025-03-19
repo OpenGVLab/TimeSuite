@@ -23,7 +23,7 @@ This paper proposes TimeSuite, a collection of new designs to adapt the existing
 
 ## :fire: Updates
 
-- 2025.02.12 TimeSuite is now initially open-sourced. We welcome everyone to try it out!
+- 2025.02.12 TimeSuite is open-sourced. We welcome everyone to try it out!
 - 2025.01.23 TimeSuite has been accepted by ICLR 2025.
 - 2024.10.25 The paper of TimeSuite has been uploaded to arXiv.
 
