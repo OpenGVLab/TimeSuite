@@ -66,7 +66,33 @@ bash eval/get_grounding_result.sh
 
 ## TimePro Dataset
 
+### Annotations
+
 - All data used for fine-tuning is now open-sourced. Please visit [here](https://huggingface.co/Lanxingxuan/TimeSuite/tree/main/datasets/TimePro) to download.
+
+### Videos
+
+- DiDeMo: [https://github.com/LisaAnne/LocalizingMoments?tab=readme-ov-file#dataset](https://github.com/LisaAnne/LocalizingMoments?tab=readme-ov-file#dataset)
+- QuerYD: [https://www.robots.ox.ac.uk/~vgg/data/queryd/](https://www.robots.ox.ac.uk/~vgg/data/queryd/)
+- HiREST: [https://github.com/j-min/HiREST](https://github.com/j-min/HiREST)
+- ActivityNet: [http://activity-net.org/download.html](http://activity-net.org/download.html)
+- ViTT: [https://github.com/google-research-datasets/Video-Timeline-Tags-ViTT](https://github.com/google-research-datasets/Video-Timeline-Tags-ViTT)
+- YouCook2: [http://youcook2.eecs.umich.edu/download](http://youcook2.eecs.umich.edu/download)
+- TVSum: [https://github.com/yalesong/tvsum](https://github.com/yalesong/tvsum)
+- SumMe: [http://classif.ai/dataset/ethz-cvl-video-summe/](http://classif.ai/dataset/ethz-cvl-video-summe/)
+- COIN: [https://github.com/coin-dataset/annotations](https://github.com/coin-dataset/annotations)
+- YT-Temporal: [https://rowanzellers.com/merlot/#data](https://rowanzellers.com/merlot/#data)
+- Internvid: [https://github.com/OpenGVLab/InternVideo/blob/main/Data/InternVid/README_CN.md](https://github.com/OpenGVLab/InternVideo/blob/main/Data/InternVid/README_CN.md)
+- HowTo100M(CosMo): [https://www.di.ens.fr/willow/research/howto100m/](https://www.di.ens.fr/willow/research/howto100m/)
+
+- VideoChatGPT:
+- VideoChat:
+- EgoQA:
+- STAR:
+- MovieChat:
+
+- Charades-STA: [https://github.com/jiyanggao/TALL#charades-sta-anno-download](https://github.com/jiyanggao/TALL#charades-sta-anno-download)
+- QVHighlight: [https://github.com/jayleicn/moment_detr/blob/main/data/README.md](https://github.com/jayleicn/moment_detr/blob/main/data/README.md)
 
 # :page_facing_up: Citation
 
