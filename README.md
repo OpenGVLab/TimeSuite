@@ -71,7 +71,7 @@ bash eval/get_grounding_result.sh
 - All data used for fine-tuning is now open-sourced. Please visit [here](https://huggingface.co/Lanxingxuan/TimeSuite/tree/main/datasets/TimePro) to download.
 
 ### Videos
-
+**_TimePro_**
 - DiDeMo: [https://github.com/LisaAnne/LocalizingMoments?tab=readme-ov-file#dataset](https://github.com/LisaAnne/LocalizingMoments?tab=readme-ov-file#dataset)
 - QuerYD: [https://www.robots.ox.ac.uk/~vgg/data/queryd/](https://www.robots.ox.ac.uk/~vgg/data/queryd/)
 - HiREST: [https://github.com/j-min/HiREST](https://github.com/j-min/HiREST)
@@ -84,13 +84,13 @@ bash eval/get_grounding_result.sh
 - YT-Temporal: [https://rowanzellers.com/merlot/#data](https://rowanzellers.com/merlot/#data)
 - Internvid: [https://github.com/OpenGVLab/InternVideo/blob/main/Data/InternVid/README_CN.md](https://github.com/OpenGVLab/InternVideo/blob/main/Data/InternVid/README_CN.md)
 - HowTo100M(CosMo): [https://www.di.ens.fr/willow/research/howto100m/](https://www.di.ens.fr/willow/research/howto100m/)
-
-- VideoChatGPT:
-- VideoChat:
-- EgoQA:
-- STAR:
-- MovieChat:
-
+**_Normal_**
+- VideoChatGPT: [https://github.com/mbzuai-oryx/Video-ChatGPT/tree/main/data](https://github.com/mbzuai-oryx/Video-ChatGPT/tree/main/data)
+- VideoChat: [https://github.com/OpenGVLab/InternVideo/tree/main/Data/instruction_data](https://github.com/OpenGVLab/InternVideo/tree/main/Data/instruction_data)
+- EgoQA: [https://ego4d-data.org/](https://ego4d-data.org/)
+- STAR: [https://bobbywu.com/STAR/](https://bobbywu.com/STAR/)
+- MovieChat: [https://huggingface.co/datasets/Enxin/MovieChat-1K_train](https://huggingface.co/datasets/Enxin/MovieChat-1K_train)
+**_FT_**
 - Charades-STA: [https://github.com/jiyanggao/TALL#charades-sta-anno-download](https://github.com/jiyanggao/TALL#charades-sta-anno-download)
 - QVHighlight: [https://github.com/jayleicn/moment_detr/blob/main/data/README.md](https://github.com/jayleicn/moment_detr/blob/main/data/README.md)
 
