@@ -68,7 +68,7 @@ bash eval/get_grounding_result.sh
 
 ### Annotations
 
-- All data used for fine-tuning is now open-sourced. Please visit [here](https://huggingface.co/Lanxingxuan/TimeSuite/tree/main/datasets/TimePro) to download.
+- All data used for fine-tuning is now open-sourced. Please visit [https://huggingface.co/Lanxingxuan/TimeSuite/tree/main/datasets/TimePro](https://huggingface.co/Lanxingxuan/TimeSuite/tree/main/datasets/TimePro) to download.
 
 ### Videos
 
